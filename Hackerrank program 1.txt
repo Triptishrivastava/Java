@@ -1,8 +1,5 @@
 import java.io.*;
 import java.util.*;
-import java.io.*;
-import java.uitl.*;
-
 public class Solution {
     static boolean flag;
     static int b,h;
