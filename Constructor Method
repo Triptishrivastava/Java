@@ -1,0 +1,22 @@
+class MyMainEmployee{
+    private int id;
+    private String name;
+    public MyMainEmployee(String n,int i){
+        id=i;
+        name=n;
+    }
+    public String getname(){
+        return name;
+    }
+    public int getid(){
+        return id;
+    }
+}
+public class Constructor {
+    public static void main(String[]args){
+        MyMainEmployee tripti=new MyMainEmployee("Mynametripti",20);
+        System.out.println(tripti.getname());
+        System.out.println(tripti.getid());
+
+    }
+}
