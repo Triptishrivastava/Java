@@ -1,0 +1,21 @@
+
+public class Switch_Case {
+    public static void main(String[]args) {
+        int age=45;
+        switch(age) {
+            case 20:
+                System.out.println("you are not a child");
+                break;
+            case 30:
+                System.out.println("you are young");
+                break;
+            case 48:
+                System.out.println("you are adult");
+                break;
+            default:
+                System.out.println("tou are not adult");
+                   }
+            System.out.println("you are human");
+
+     }
+}
