@@ -1,0 +1,32 @@
+class Base1{
+    Base1(){
+        System.out.println("I am a constructor");
+    }
+    Base1(int x){
+        System.out.println("I am a overload constructor with value x:" +" "+ x);
+    }
+}
+class Derived1 extends Base1{
+    Derived1(){
+        System.out.println("I am a constructor of derived class");
+    }
+    Derived1(int x,int y){
+       super(x);
+        System.out.println("I am a overload constructor of derived class with value x & y:" +" "+ x +" "+y);
+    }
+}
+class Derived2 extends Derived1{
+    Derived2(){
+        System.out.println("I am a constructor of class Derived2");
+    }
+    Derived2(int x,int y,int z){
+        super(x,y);
+        System.out.println("I am a overload constructor of class Derived2 with value x & y & z:"+" "+ x+" "+y+" "+z);
+    }
+}
+public class ConstructorOverloadingInInheritance {
+    public static void main(String[]args){
+        Derived2 d=new Derived2(4,5,6);
+
+    }
+}
