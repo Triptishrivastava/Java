@@ -1,0 +1,32 @@
+abstract class Parent2{
+         public Parent2(){
+             System.out.println ("I am a base2 construtor");
+    }
+    public void sayHello(){
+        System.out.println("Hello");
+    }
+    abstract public void greet();
+    abstract public void greet2();
+}
+class Child extends Parent2{
+    @Override
+    public void greet(){
+        System.out.println("Good Morning....");
+    }
+    @Override
+    public void greet2(){
+        System.out.println("Good Afternoon....");
+    }
+}
+/* abstract class Child2 extends Parent2{
+    public void name(){
+        System.out.println("My name is Tripti");
+    }
+} */
+public class AbstractClass {
+    public static void main(String[] args) {
+       Child obj = new Child();
+       obj.greet();
+       obj.greet2();
+    }
+}
