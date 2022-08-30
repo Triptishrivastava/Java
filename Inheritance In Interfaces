@@ -1,0 +1,42 @@
+interface sampleInterface{
+    void math1();
+    void math2();
+}
+interface childsampleInterface extends sampleInterface{ 
+    void math3();                                        
+    void math4();
+}
+class MySampleinterface implements childsampleInterface{
+    @Override
+    public void math3(){
+        System.out.println("I am Tripti");
+    }
+    @Override
+    public  void math4(){
+        System.out.println("How are you");
+    }
+    @Override
+    public void math1(){
+        System.out.println("Good Morning...");
+    }
+    @Override
+    public void math2(){
+        System.out.println("Heyy");
+    }
+}
+
+    public class Inheritance_In_Interfaces {
+    public static void main(String[] args) {
+        //using sampleInterface 
+        sampleInterface obj = new MySampleinterface();
+        obj.math1();
+        obj.math2();
+        
+        //using childsampleInterface reference
+        childsampleInterface obj = new MySampleinterface();
+          obj.math1();
+          obj.math2();
+          obj.math3();
+          obj.math4();
+    }
+}
