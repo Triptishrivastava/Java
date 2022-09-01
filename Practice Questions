@@ -1,0 +1,28 @@
+abstract class Telephone{
+    abstract void ring();
+    abstract void lift();
+    abstract void disconnect();
+}
+class SmartTelephone extends Telephone{
+    @Override
+    public void ring(){
+        System.out.println("Telephone is ringing....");
+    }
+    @Override
+    public void lift(){
+        System.out.println("Telephone is lifted...");
+    }
+
+    @Override
+    public void disconnect() {
+        System.out.println("Telephone is disconnected...");
+    }
+}
+public class AbstractClass {
+    public static void main(String[] args) {
+        Telephone obj = new SmartTelephone();
+        obj.ring();
+        obj.lift();
+        obj.disconnect();
+    }
+}
