@@ -1,0 +1,26 @@
+package Mypackage;
+
+
+import java.util.Scanner;
+
+public class Matrix_qus {
+
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        int rows=sc.nextInt();
+        int col=sc.nextInt();
+        int a[][]=new int[rows][col];
+        for(int i=0;i<3;i++){
+            for(int j=0;j<3;j++){
+                a[i][j]=sc.nextInt();
+            }
+        }
+        int sum =0;
+        for(int k=0;k<rows;k++){
+            for(int l=0;l<col;l++){
+                System.out.print(a[k][l]+" ");
+            }
+            System.out.println();
+        }
+    }
+}
