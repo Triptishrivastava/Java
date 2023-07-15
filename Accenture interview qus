@@ -1,0 +1,25 @@
+class Example{
+     public int method(int m, int n){
+         int sum1=0, sum2=0 ;
+         for(int i=1;i<=n;i++){
+             if(i%m==0){
+                 sum1 +=i;
+             } else{
+
+                         sum2 +=i;
+             }
+         }
+         return sum2-sum1;
+
+     }
+}
+public class Accenture_EX {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int m=sc.nextInt();
+        int n=sc.nextInt();
+         Example obj=new Example();
+        System.out.println(obj.method(m,n));
+
+    }
+}
