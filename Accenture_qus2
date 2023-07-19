@@ -1,0 +1,37 @@
+import java.util.*;
+
+public class Accenture_qus2 {
+    static int largeSmallSum(ArrayList<Integer> arr){
+        if(arr.isEmpty()){
+            return 0;
+        }
+        if(arr.size()<=3){
+            return 0;
+        }
+        ArrayList<Integer> oddList=new ArrayList<>();
+        ArrayList<Integer> EvenList=new ArrayList<>();
+        for(int i=0;i< arr.size();i++){
+            if(i%2==0){
+                EvenList.add(arr.get(i));
+            } else
+            {
+                oddList.add(arr.get(i));
+            }
+        }
+        
+        Collections.sort(oddList);
+        Collections.sort(EvenList);
+
+        return oddList.get(1)+EvenList.get(1);
+    }
+    public static void main(String[] args) {
+        ArrayList<Integer> arr=new ArrayList<>();
+        arr.add(3);
+        arr.add(2);
+        arr.add(1);
+        arr.add(7);
+        arr.add(5);
+        arr.add(4);
+        System.out.println( largeSmallSum(arr));
+    }
+}
