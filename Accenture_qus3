@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Accentur_qus3 {
+     static String anagrams(String str1,String str2){
+         if(str1.length()!=str2.length()){
+             return "no";
+         }
+         char[] arr=str1.toLowerCase().toCharArray();
+         char[] arr2=str1.toLowerCase().toCharArray();
+         Arrays.sort(arr);
+         Arrays.sort(arr2);
+         return arr.equals(arr2)?"yes":"no";
+     }
+    public static void main(String[] args) {
+     String str1=new String("Listen");
+     String str2=new String("Silens");
+        System.out.println(anagrams(str1,str2));
+
+
+
+    }
+}
