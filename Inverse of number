@@ -1,0 +1,25 @@
+package Mypackage2;
+
+import java.util.Scanner;
+
+public class Inverse_Number {
+    static void inverse(int n) {
+        int inv=0;
+        int op=1;
+        while(n!=0){
+            int od=n % 10;
+            int id=op;
+            int ip=od;
+              inv += id*(Math.pow(10,(ip-1)));
+              n=n/10;
+              op++;
+        }
+        System.out.println(inv);
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n= sc.nextInt();
+        inverse (n);
+
+    }
+}
